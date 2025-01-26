@@ -50,35 +50,34 @@ This README serves as a guide to our reading list, highlighting key papers.
 ## Data-Centric LLM Methods 
 
 ### Data Annotation
-1. Modeling and mitigating human annotation errors to design efficient stream processing systems with human-in-theloop machine learning
-2. Investigating and mitigating biases in crowdsourced data
-3. Large language models for data annotation and synthesis: A survey
-4. Chatgpt outperforms crowd workers for text-annotation tasks
-5. Beginning of an end of manual linguistic data annotation?
-6. Chatgpt-4 outperforms experts and crowd workers in annotating political twitter messages with zeroshot learning
-7. An empirical study on challenges for llm application developers
-8.  AnnoLLM: Making large language models to be better crowdsourced annotators
-9.  Multi-news+: Costefficient dataset cleansing via LLM-based data annotation
-10.  Language models in the loop: Incorporating prompting into weak supervision
+1. Modeling and mitigating human annotation errors to design efficient stream processing systems with human-in-theloop machine learning [paper](https://arxiv.org/pdf/2007.03177)
+2. Investigating and mitigating biases in crowdsourced data [paper](https://arxiv.org/pdf/2111.14322)
+3. Large language models for data annotation and synthesis: A survey [paper](https://aclanthology.org/2024.emnlp-main.54.pdf)
+4. Chatgpt outperforms crowd workers for text-annotation tasks [paper](https://arxiv.org/pdf/2303.15056)
+5. ChatGPT: Beginning of an End of Manual Linguistic Data Annotation? Use Case of Automatic Genre Identification [paper](https://arxiv.org/abs/2303.03953)
+6. Chatgpt-4 outperforms experts and crowd workers in annotating political twitter messages with zeroshot learning [paper](https://arxiv.org/pdf/2304.06588)
+7. An empirical study on challenges for llm application developers [paper](https://arxiv.org/pdf/2408.05002)
+8.  AnnoLLM: Making large language models to be better crowdsourced annotators [paper](https://aclanthology.org/2024.naacl-industry.15.pdf)
+9.  Multi-news+: Costefficient dataset cleansing via LLM-based data annotation [paper](https://aclanthology.org/2024.emnlp-main.2.pdf)
+10.  Language models in the loop: Incorporating prompting into weak supervision [paper](https://arxiv.org/pdf/2205.02318)
 
 ### Augmentation
-1. Data augmentation can improve robustness
-2. Expanding chatbot knowledge in customer service: Context-aware similar question generation using large language models
-3. A new benchmark and reverse validation method for passage-level hallucination detection
-4. Large language model as attributed training data generator: A tale of diversity and bias
-5. Fusegen: Plm fusion for data-generation based zero-shot learning
-6. Multi-news+: Costefficient dataset cleansing via LLM-based data annotation
-7. Fill in the gaps: Model calibration and generalization with synthetic data
+1. Data augmentation can improve robustness [paper](https://arxiv.org/pdf/2111.05328)
+2. Expanding chatbot knowledge in customer service: Context-aware similar question generation using large language models [paper](https://arxiv.org/pdf/2410.12444)
+3. A new benchmark and reverse validation method for passage-level hallucination detection [paper](https://aclanthology.org/2023.findings-emnlp.256.pdf)
+4. Large language model as attributed training data generator: A tale of diversity and bias [paper](https://arxiv.org/pdf/2306.15895)
+5. Fusegen: Plm fusion for data-generation based zero-shot learning [paper](https://arxiv.org/pdf/2406.12527)
+6. Multi-news+: Costefficient dataset cleansing via LLM-based data annotation [paper](https://aclanthology.org/2024.emnlp-main.2.pdf)
+7. Fill in the gaps: Model calibration and generalization with synthetic data [paper](https://aclanthology.org/2024.emnlp-main.955.pdf)
 
 ### Feature Engineering
-1. Large language models for automated data science: Introducing caafe for context-aware automated feature engineering
-2. Large language models for constructing and optimizing machine learning workflows: A survey
-3. Dynamic and adaptive feature generation with llm
-4. Llm-based feature generation from text for interpretable machine
-learning
-5. Informing reinforcement learning agents by grounding language to markov decision processes
-6. Unsupervised extraction of dialogue policies from conversations
-7. Can chatgpt’s performance be improved on verb metaphor detection tasks? Bootstrapping and combining tacit knowledge 
+1. Large language models for automated data science: Introducing caafe for context-aware automated feature engineering [paper](https://arxiv.org/pdf/2305.03403)
+2. Large language models for constructing and optimizing machine learning workflows: A survey [paper](https://arxiv.org/pdf/2411.10478)
+3. Dynamic and adaptive feature generation with llm [paper](https://arxiv.org/pdf/2406.03505)
+4. LLM-based feature generation from text for interpretable machine learning [paper](https://arxiv.org/pdf/2409.07132)
+5. Informing reinforcement learning agents by grounding language to markov decision processes [paper](https://openreview.net/pdf?id=P4op21eju0)
+6. Unsupervised extraction of dialogue policies from conversations [paper](https://aclanthology.org/2024.emnlp-main.1060.pdf)
+7. Can chatgpt’s performance be improved on verb metaphor detection tasks? Bootstrapping and combining tacit knowledge  [paper](https://aclanthology.org/2024.acl-long.57.pdf)
 
 
 ---
@@ -93,38 +92,37 @@ annotation [paper](https://aclanthology.org/2024.law-1.10.pdf)
 4. Enhancing text classification through llm-driven active learning and human
 annotation [paper](https://aclanthology.org/2024.law-1.10.pdf)
 5. A survey of confidence estimation and calibration in large language models [paper](https://aclanthology.org/2024.naacl-long.366.pdf)
-6. Can LLMs express their uncertainty? an empirical evaluation of confidence elicitation in LLMs
-7.  Generalized category discovery with large language models in the loop
-8.  Dial-in llm: Human-aligned dialogue intent clustering with llm-in-the-loop
-9.  Neural topic modeling with large language models in the loop
+6. Can LLMs express their uncertainty? an empirical evaluation of confidence elicitation in LLMs [paper](https://arxiv.org/pdf/2306.13063)
+7.  Generalized category discovery with large language models in the loop [paper](https://aclanthology.org/2024.findings-acl.512.pdf)
+8.  Dial-in llm: Human-aligned dialogue intent clustering with llm-in-the-loop [paper](https://arxiv.org/pdf/2412.09049)
+9.  Neural topic modeling with large language models in the loop [paper](https://arxiv.org/pdf/2411.08534)
 
 
 ### Reinforcement Learning With LLM
-1. Survey on large language model-enhanced reinforcement learning: Concept,
-taxonomy, and methods
-2. Aligning large language models with human preferences through representation engineering
-3.  A survey on enhancing reinforcement learning in complex environments: Insights from human and llm feedback
-4.  Guiding pretraining in reinforcement learning with large language models
-5.  Reward design with language models
-6.  Reinforcement learning from llm feedback to counteract goal misgeneralization
-7.  Lagr-seq: Language-guided reinforcement learning with sample-efficient querying
-8.  LLM augmented hierarchical agents
-9.  Experience sharing and human-in-the-loop optimization for federated robot navigation recommendation
-10.   Federated machine learning: Concept and applications
+1. Survey on large language model-enhanced reinforcement learning: Concept, taxonomy, and methods [paper](https://arxiv.org/pdf/2404.00282)
+2. Aligning large language models with human preferences through representation engineering [paper](https://aclanthology.org/2024.acl-long.572.pdf)
+3.  A survey on enhancing reinforcement learning in complex environments: Insights from human and llm feedback [paper](https://arxiv.org/pdf/2411.13410)
+4.  Guiding pretraining in reinforcement learning with large language models [paper](https://arxiv.org/pdf/2302.06692)
+5.  Reward design with language models [paper](https://arxiv.org/pdf/2303.00001)
+6.  Reinforcement learning from llm feedback to counteract goal misgeneralization [paper](https://arxiv.org/pdf/2401.07181)
+7.  Lagr-seq: Language-guided reinforcement learning with sample-efficient querying [paper](https://arxiv.org/pdf/2308.13542)
+8.  LLM augmented hierarchical agents [paper](https://arxiv.org/pdf/2311.05596)
+9.  Experience sharing and human-in-the-loop optimization for federated robot navigation recommendation [paper](https://link.springer.com/chapter/10.1007/978-3-031-51026-7_16)
+10.   Federated machine learning: Concept and applications [paper](https://arxiv.org/pdf/1902.04885)
 
 
 ---
 
 ## Task-Centric Approaches
-1. Harnessing large language models as post-hoc correctors
-2. Hyporadise: An open baseline for generative speech recognition with large language models
-3. Gentranslate: Large language models are generative multilingual speech and machine translators
-4. Large language models enable few-shot clustering
-5. Dial-in llm: Human-aligned dialogue intent clustering with llm-in-the-loop
-6. Enhanced short text modeling: Leveraging large language models for topic refinement
-7. Generating descriptive explanations of machine learning models using llm
-8. Improving hierarchical text clustering with llm-guided multi-view cluster representation
-9. Generalized category discovery with large language models in the loop
-10. Uncovering latent arguments in social media messaging by employing llms-in-the-loop strategy
-11. G-eval: Nlg evaluation using gpt-4 with better human alignment 
+1. Harnessing large language models as post-hoc correctors [paper](https://aclanthology.org/2024.findings-acl.867.pdf)
+2. Hyporadise: An open baseline for generative speech recognition with large language models [paper](https://arxiv.org/pdf/2309.15701)
+3. Gentranslate: Large language models are generative multilingual speech and machine translators [paper](https://arxiv.org/pdf/2402.06894)
+4. Large language models enable few-shot clustering [paper](https://aclanthology.org/2024.tacl-1.18.pdf)
+5. Dial-in llm: Human-aligned dialogue intent clustering with llm-in-the-loop [paper](https://arxiv.org/pdf/2412.09049)
+6. Enhanced short text modeling: Leveraging large language models for topic refinement [paper](https://arxiv.org/pdf/2403.17706)
+7. Generating descriptive explanations of machine learning models using llm [paper](https://www.computer.org/csdl/proceedings-article/bigdata/2024/10825667/23ykhJUQhpK)
+8. Improving hierarchical text clustering with llm-guided multi-view cluster representation [paper](https://aclanthology.org/2024.emnlp-industry.54.pdf)
+9. Generalized category discovery with large language models in the loop [paper](https://aclanthology.org/2024.findings-acl.512.pdf)
+10. Uncovering latent arguments in social media messaging by employing llms-in-the-loop strategy [paper](https://arxiv.org/pdf/2404.10259)
+11. G-eval: Nlg evaluation using gpt-4 with better human alignment [paper](https://aclanthology.org/2023.emnlp-main.153.pdf)
 
