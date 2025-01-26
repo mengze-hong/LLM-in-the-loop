@@ -11,6 +11,7 @@ This README serves as a guide to our reading list, highlighting key papers.
 3. [Data-Centric LLM Methods](#data-centric-llm-methods)
 4. [Model-Centric Approaches](#model-centric-approaches)
 5. [Task-Centric Approaches](#task-centric-approaches)
+6. [Summary](#Summary)
 
 
 ---
@@ -124,4 +125,48 @@ annotation [paper](https://aclanthology.org/2024.law-1.10.pdf)
 9. Generalized category discovery with large language models in the loop [paper](https://aclanthology.org/2024.findings-acl.512.pdf)
 10. Uncovering latent arguments in social media messaging by employing llms-in-the-loop strategy [paper](https://arxiv.org/pdf/2404.10259)
 11. G-eval: Nlg evaluation using gpt-4 with better human alignment [paper](https://aclanthology.org/2023.emnlp-main.153.pdf)
+
+
+---
+
+## Summary
+
+| Publisher                              | Year:Count                                  | Total |
+|----------------------------------------|---------------------------------------------|-------|
+| AAAI                                   | {2021: 1, 2023: 1, 2024: 1, 2025: 1}       | 4     |
+| ACL                                    | {2019: 1, 2020: 2, 2024: 6}                | 9     |
+| ACM                                    | {2022: 1}                                  | 1     |
+| ACM Trans. Intell. Syst. Technol       | {2019: 1}                                  | 1     |
+| ArXiv                                  | {2020: 1, 2023: 10, 2024: 20}              | 31    |
+| Brain Informatics                      | {2016: 1}                                  | 1     |
+| CoRL                                   | {2023: 1}                                  | 1     |
+| CoRR                                   | {2024: 1}                                  | 1     |
+| CSCW                                   | {2021: 1}                                  | 1     |
+| EACL                                   | {2023: 1}                                  | 1     |
+| ECCV                                   | {2024: 1}                                  | 1     |
+| Elsevier                               | {2022: 1}                                  | 1     |
+| EMNLP                                  | {2016: 1, 2023: 7, 2024: 5}                | 13    |
+| EMNLP-IJCNLP                           | {2019: 1}                                  | 1     |
+| IEEE BigData                           | {2023: 1, 2024: 1}                         | 2     |
+| IEEE TCCN                              | {2024: 1}                                  | 1     |
+| IEEE TNNLS                             | {2019: 1}                                  | 1     |
+| ICML                                   | {2016: 1, 2022: 1, 2023: 1, 2024: 1}       | 4     |
+| ICMLA                                  | {2017: 1}                                  | 1     |
+| ICLR                                   | {2015: 1, 2022: 1, 2023: 2, 2024: 3}       | 7     |
+| Int. J. Hum. Comput. Stud             | {2022: 1}                                  | 1     |
+| LAW                                    | {2024: 1}                                  | 1     |
+| NAACL                                  | {2022: 1, 2024: 6}                         | 7     |
+| NeurIPS                                | {2014: 1, 2020: 2, 2021: 1, 2024: 2}       | 6     |
+| Online manuscript                      | {2025: 1}                                  | 1     |
+| PNAS                                   | {2023: 1}                                  | 1     |
+| RLC                                    | {2024: 1}                                  | 1     |
+| SIAM                                   | {2017: 1}                                  | 1     |
+| Springer                               | {2021: 1, 2022: 1, 2023: 1}                | 3     |
+| TACL                                   | {2020: 1, 2024: 1}                         | 2     |
+| TPAMI                                  | {2013: 1}                                  | 1     |
+| VLDB                                   | {2013: 1, 2014: 1, 2019: 1}                | 3     |
+| Total                                                                              || 115   |
+
+
+
 
