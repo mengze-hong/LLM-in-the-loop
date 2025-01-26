@@ -7,7 +7,7 @@ This README serves as a guide to our reading list, highlighting key papers.
 ## Table of Contents
 
 1. [Crowdsourcing](#crowdsourcing)
-2. [LLM-in-the-Loop Keyword Paper](#llm-in-the-loop)
+2. [LLM-in-the-Loop Keyword Paper](#llm-in-the-loop-keyword-paper)
 3. [Data-Centric LLM Methods](#data-centric-llm-methods)
 4. [Model-Centric Approaches](#model-centric-approaches)
 5. [Task-Centric Approaches](#task-centric-approaches)
