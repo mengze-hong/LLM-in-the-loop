@@ -2,6 +2,8 @@
 
 This README serves as a guide to our reading list, highlighting key papers.
 
+![Overview of LLM In The Loop](LLM_ITL_Overview.png)
+
 ---
 
 ## Table of Contents
@@ -11,8 +13,7 @@ This README serves as a guide to our reading list, highlighting key papers.
 3. [Data-Centric LLM Methods](#data-centric-llm-methods)
 4. [Model-Centric Approaches](#model-centric-approaches)
 5. [Task-Centric Approaches](#task-centric-approaches)
-6. [Summary](#Summary)
-
+6. [Summary](#summary)
 
 ---
 
