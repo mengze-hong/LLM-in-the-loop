@@ -1,0 +1,219 @@
+final_prompt: |
+  {instruction}
+  {few_shot_examples}
+
+  {answer_format}
+
+eval_prompt: |
+  {instruction}
+  
+  [Question] {question}
+  [Answer] 
+
+quest_reason_ans: |
+
+  [Question] {question}
+  [Answer] {answer}
+
+system_prompt: You are a helpful assistant developed by OpenAI that can efficiently perform tasks as per instruction
+
+expert_profile: You are a helpful assistant developed by OpenAI that can efficiently perform tasks as per instruction
+
+thinking_styles:
+  - "What is the targeted output that I should produce?"
+  - "How many instances of the output should I produce?"
+  - "How could I ensure that the output is correct and complete with the expected number of response?"
+  - "How can I break down this problem into smaller pieces so that the response format is guaranteed to be correct?"
+  - "Try creative thinking, allocating instances into clusters one-by-one can lead to a complete list of labels with all instances covered."
+  - "Clustering takes n sentences instances as input and produce n label instances as output, which is the golden rule."
+  - "Omission error happens when the response contains less or more label instances than the input instrances, which is strictly forbidden."
+  - "What is the best way to allocate instances into clusters to ensure that the output is correct and complete?"
+  - "How can I ensure that the output is consistent with the input instances?"
+  - "What are the potential errors or mistakes that could occur in producing the output?"
+  - "How can I avoid these errors and ensure that the output is accurate and reliable?"
+  - "What are the key assumptions underlying this task?"
+  - "How can progress or success in solving the problem be measured or evaluated?"
+  - "Optimization target: obtain the exact same amount of instances in the output as in the input."
+  - "Clustering target: allocate instances into clusters to ensure that all instances are covered, and the cluster maintains high coherence."
+  - "Tip: allocating too many instrances to one cluster is not ideal, as it may lead to a lack of diversity in the clusters."
+  - "Tip: all clusters should have some instances allocated to them, to ensure that all instances are covered."
+  - "Rule: make sure the output contains the exact amount of instances as the input."
+  - "Does the problem require addressing systemic or structural issues rather than just individual instances?"
+  - "Is the problem time-sensitive or urgent, requiring immediate attention and action?"
+  - "What kinds of solution typically are produced for this kind of problem specification?"
+  - "Given the problem specification and the current best solution, have a guess about other possible solutions."
+  - "Let's imagine the current best solution is totally wrong, what other ways are there to think about the problem specification?"
+  - "What is the best way to modify this current best solution, given what you know about these kinds of problem specification?"
+  - "Ignoring the current best solution, create an entirely new solution to the problem."
+  - "Let's think step by step."
+  - "Let's make a step by step plan and implement it with good notion and explanation."
+
+
+# ans_delimiter_instruction: " Wrap only your final answer, without reason for each question separately between <ANS_START> and <ANS_END> tags."
+ans_delimiter_instruction: ""
+
+meta_critique_template: |
+  I'm trying to write a zero-shot instruction that will help the most capable and suitable agent to solve the task.
+  My current prompt is: "{instruction}"
+  But this prompt gets the following examples wrong: Omission error: number of instances in the ouput does not correspond to the number of input instances; {examples}
+  Provide detail feedback which identifies reasons where the instruction could have gone wrong.
+  Wrap each reason with <START> and <END>
+  
+
+meta_positive_critique_template: |
+  I'm trying to write a prompt for zero-shot instruction task that will help the most capable and suitable agent to solve the task.
+  My current prompt is:
+  [CURRENT PROMPT] "{instruction}"
+  Now this prompt got the following examples correct:
+  [CORRECT EXAMPLES] {examples}
+  Since you cant use these examples, analyse and understand characteristics/complexity and diversity of these examples and their reasoning chain and
+  accordingly provide suggestions to further improve the prompt and make it better as a zero shot instruction task.
+    
+
+critique_refine_template: |
+  I'm trying to write a zero-shot instruction that will help the most capable and suitable agent to solve the task.
+  My current prompt is: "{instruction}"
+  But this prompt gets the following examples wrong: Omission error: number of instances in the ouput does not correspond to the number of input instances; {examples}
+  On carefully analysing these examples, following are the critiques related to prompt {critique}
+  Use the critique smartly, refine the current prompt to make sure we dont get these examples wrong and ensure the output contains exactly the same number of instances as the input.
+  Based on the above information, Now I want you to write {steps_per_sample} different improved prompts.
+  Each prompt should be wrapped with <START> and <END>.
+  [Refined Prompts]:
+
+
+solve_template: |
+  You are given a prompt instruction and the following {questions_batch_size} questions of the same task.
+  [Instruction]: {instruction}
+
+  [Question]: {questions}
+
+  {answer_format}
+
+  [Answers]:
+  
+
+meta_sample_template: |
+  You are given a task description and a prompt instruction and different styles known as meta prompts:
+  [Task Description]: {task_description}
+  [Meta Prompt]: {meta_prompts}
+  Now you need to generate {num_variations} variations of following Instruction adaptively mixing meta prompt while keeping similar semantic meaning.
+  Make sure to wrap each generated prompt with <START> and <END>
+  [Prompt Instruction]: {prompt_instruction}
+  [Generated Prompts]:
+
+
+intent_template: |
+  You are given an instruction along description of task labelled as [Task Description]. For the given instruction, list out 3-5 keywords in comma separated format as [Intent] which define the characteristics or properties required by the about the most capable and suitable agent to solve the task using the instruction.
+
+
+  [Task Description]: {task_description}
+  [Instruction]: {instruction}
+  
+  
+  [Intent]:
+
+
+expert_template: |
+  For each instruction, write a high-quality description about the most capable and suitable agent to answer the instruction. In second person perspective.\n
+  
+  [Instruction]: Make a list of 5 possible effects of deforestation.\n
+  [Agent Description]: You are an environmental scientist with a specialization in the study of ecosystems and their interactions with human activities. You have extensive knowledge about the effects of deforestation on the environment, including the impact on biodiversity, climate change, soil quality, water resources, and human health. Your work has been widely recognized and has contributed to the development of policies and regulations aimed at promoting sustainable forest management practices. You are equipped with the latest research findings, and you can provide a detailed and comprehensive list of the possible effects of deforestation, including but not limited to the loss of habitat for countless species, increased greenhouse gas emissions, reduced water quality and quantity, soil erosion, and the emergence of diseases. Your expertise and insights are highly valuable in understanding the complex interactions between human actions and the environment.
+  
+  
+  [Instruction]: Identify a descriptive phrase for an eclipse.\n
+  [Agent Description]: You are an astronomer with a deep understanding of celestial events and phenomena. Your vast knowledge and experience make you an expert in describing the unique and captivating features of an eclipse. You have witnessed and studied many eclipses throughout your career, and you have a keen eye for detail and nuance. Your descriptive phrase for an eclipse would be vivid, poetic, and scientifically accurate. You can capture the awe-inspiring beauty of the celestial event while also explaining the science behind it. You can draw on your deep knowledge of astronomy, including the movement of the sun, moon, and earth, to create a phrase that accurately and elegantly captures the essence of an eclipse. Your descriptive phrase will help others appreciate the wonder of this natural phenomenon.
+  
+
+  
+  [Instruction]: Identify the parts of speech in this sentence: \"The dog barked at the postman\".\n
+  [Agent Description]: You are a linguist, well-versed in the study of language and its structures. You have a keen eye for identifying the parts of speech in a sentence and can easily recognize the function of each word in the sentence. You are equipped with a good understanding of grammar rules and can differentiate between nouns, verbs, adjectives, adverbs, pronouns, prepositions, and conjunctions. You can quickly and accurately identify the parts of speech in the sentence "The dog barked at the postman" and explain the role of each word in the sentence. Your expertise in language and grammar is highly valuable in analyzing and understanding the nuances of communication.
+  
+  
+  [Instruction]: {task_description}
+  [Agent Description]:
+
+
+examples_critique_template: |
+  You are an expert example selector who can help in selection of right in-context examples to help the most suitable agent solve this problem.
+  You are also given the prompt instruction which is used to solve this task
+  [Prompt]: {prompt}
+  You are given the task description of the task:
+  [Task Description]: {task_description}
+  I'm trying to write a few shots prompt using {num_examples} in-context examples to effectively solve any questions of the above task.
+  My current {num_examples} in-context examples set are: {examples}
+  Think of analysing, understanding and creating examples of task on the criteria of diversity of types of examples, complexity of the nature/characteristics of the examples and relevance/compatibility to the whole example set in total.
+  Output all the suggestions/ improvement which could be made to improve each individual example of the whole example selection set.
+
+examples_critique_template_zero_shot: |
+  You are an expert example selector who can help in selection of right in-context examples to help the most suitable agent solve this problem.
+  You are also given the prompt instruction which is used to solve this task
+  [Prompt]: {prompt}
+  You are given the task description of the task:
+  [Task Description]: {task_description}
+  I'm trying to write a few shots prompt using {num_examples} in-context examples to effectively solve any questions of the above task.
+  Think of analysing, understanding and creating examples of task on the criteria of diversity of types of examples, complexity of the nature/characteristics of the examples and relevance/compatibility to the whole example set in total.
+  Output all the suggestions/ improvement which could be made to improve each individual example of the whole example selection set.
+
+examples_optimization_template: |
+  You are an expert example selector who can help in selection of right in-context examples to help the agent solve this problem.
+  You are also given the prompt instruction which is used to solve this task
+  [Prompt]: {prompt}
+  You are given the description of the task:
+  [Task Description]: {task_description}
+  I'm trying to write a few shots prompt using {num_examples} in-context examples to effectively solve any questions of the above task.
+  My current {num_examples} in-context examples set are: {examples}
+  You are also given a set of suggestions/improvements which could be made to improve each individual example of the whole example selection set:
+  [SUGGESTION/IMPROVEMENT]: {critique}
+  Based on the above information, use all of it smartly and diligently to carefully create new set of {num_examples}, which follow these suggestion and improvements.
+  Make sure to output each example wrapped with <START> and <END>.
+  
+  New examples should follow this format strictly:
+  
+  [Question] followed by question part of the example
+  [Answer] followed by the all the steps of logic reasoning statements related to answer. The final answer as "<ANS_START>[answer]<ANS_END>"
+  
+  For Example: <START>
+  {gt_example}
+  <END>
+  
+  [New Examples]:
+
+
+generate_reason_template: |
+  You are given a task description and instruction followed by a set of correct examples of the task.
+  
+  [Task Description]: {task_description}
+  
+  [Instruction]: {instruction}
+  
+  Each example has a question denoted by question [Question] and a final answer [Answer] .
+  
+  [Question]: {question}
+  
+  [Answer]: {answer}
+  
+  Now your task is to generate a reasoning chain that contains the steps, logical pathway followed to arrive at the correct answer, assuming the necessary domain knowledge is present as part of the question and task description.
+  
+  Make sure it is specific, non-ambiguous, complete, and specifies all the logic and steps required to reach the final answer.
+  
+  [Improved Reasoning Chain]:
+
+
+reason_optimization_template: |
+  You are given a task description and instructions of given task
+  
+  [Task Description]: {task_description}
+  
+  [Instruction]: {instruction}
+  
+  Each example has a question denoted by a question [Question] and a final answer [Answer].
+  
+  [Question]: {question}
+  
+  [Answer]: {answer}
+  
+  Please explain your reasoning behind reaching the answer given in a concise, complete, and coherent text of reasoning that contains all the steps or logical pathways followed. Ensure it is specific and non-ambiguous, and assume the necessary domain knowledge is in the question and task description.
+  
+  [Improved Reasoning Chain]:
+
+  

@@ -1,0 +1,7 @@
+datasets
+openai
+pandas
+seaborn
+tqdm
+matplotlib
+promptwizard

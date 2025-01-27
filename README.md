@@ -9,35 +9,23 @@
 
 ----
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Crowdsourcing](#crowdsourcing)
-- [LLM-in-the-Loop Keyword Paper](#llm-in-the-loop-keyword-paper)
-- [Data-Centric LLM Methods](#data-centric-llm-methods)
-  - [Data Annotation](#data-annotation)
-  - [Augmentation](#augmentation)
-  - [Feature Engineering](#feature-engineering)
-- [Model-Centric Approaches](#model-centric-approaches)
-  - [Active Learning With LLM](#active-learning-with-llm)
-  - [Reinforcement Learning With LLM](#reinforcement-learning-with-llm)
-- [Task-Centric Approaches](#task-centric-approaches)
-- [Summary](#summary)
+This page provides a comprehensive reading list on LLM-in-the-loop machine learning. The empirical experiment conducted for LLM-native text clustering can be found in the `./experiment` directory.
 
 ---
 
-## Crowdsourcing
-1. Spatial crowdsourcing: a survey [[paper]](https://link.springer.com/article/10.1007/s00778-019-00568-7)
-2. ChatGPT outperforms crowd workers for text-annotation tasks [[paper]](https://www.pnas.org/doi/abs/10.1073/pnas.2305016120)
-3. Investigating and mitigating biases in crowdsourced data [[paper]](https://dl.acm.org/doi/10.1145/3462204.3481729)
-4. AnnoLLM: Making Large Language Models to Be Better Crowdsourced Annotators [[paper]](https://aclanthology.org/2024.naacl-industry.15/)
-5. Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy [[paper]](https://www.science.org/doi/10.1126/sciadv.adp1528)
-6. LMTurk: Few-Shot Learners as Crowdsourcing Workers in a Language-Model-as-a-Service Framework [[paper]](https://aclanthology.org/2022.findings-naacl.51/)
-7. LLMs to Replace Crowdsourcing For Parallel Data Creation? The Case of Text Detoxification [[paper]](https://aclanthology.org/2024.findings-emnlp.839/)
-8. ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning [[paper]](https://arxiv.org/abs/2304.06588)
-9. ChatGPT to Replace Crowdsourcing of Paraphrases for Intent Classification: Higher Diversity and Comparable Model Robustness [[paper]](https://aclanthology.org/2023.emnlp-main.117/)
-10. A Comparative Study on Annotation Quality of Crowdsourcing and LLm Via Label Aggregation [[paper]](https://ieeexplore.ieee.org/document/10447803)
-
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [LLM-in-the-Loop Keyword Paper](#llm-in-the-loop-keyword-paper)
+- [Data-Centric LLM-in-the-loop](#data-centric-llm-in-the-loop)
+  - [Data Annotation](#data-annotation)
+  - [Augmentation](#augmentation)
+  - [Feature Engineering](#feature-engineering)
+- [Model-Centric LLM-in-the-loop](#model-centric-llm-in-the-loop)
+  - [Active Learning With LLM](#active-learning-with-llm)
+  - [Reinforcement Learning With LLM](#reinforcement-learning-with-llm)
+- [Task-Centric LLM-in-the-loop](#task-centric-llm-in-the-loop)
+- [Crowdsourcing](#crowdsourcing)
+- [Summary](#summary)
 
 ---
 
@@ -61,7 +49,7 @@
 
 ---
 
-## Data-Centric LLM Methods 
+## Data-Centric LLM-in-the-loop
 
 ### Data Annotation
 1. Large language models for data annotation and synthesis: A survey [[paper]](https://aclanthology.org/2024.emnlp-main.54.pdf)
@@ -96,7 +84,8 @@
 
 ---
 
-## Model-Centric Approaches 
+## Model-Centric LLM-in-the-loop
+
 ### Active Learning With LLM 
 
 1. LLMaAA: Making Large Language Models as Active Annotators [[paper]](https://aclanthology.org/2023.findings-emnlp.872.pdf)
@@ -127,7 +116,7 @@ annotation [[paper]](https://aclanthology.org/2024.law-1.10.pdf)
 
 ---
 
-## Task-Centric Approaches
+## Task-Centric LLM-in-the-loop
 1. Harnessing large language models as post-hoc correctors [[paper]](https://aclanthology.org/2024.findings-acl.867.pdf)
 2. Hyporadise: An open baseline for generative speech recognition with large language models [[paper]](https://arxiv.org/pdf/2309.15701)
 3. Gentranslate: Large language models are generative multilingual speech and machine translators [[paper]](https://arxiv.org/pdf/2402.06894)
@@ -140,6 +129,19 @@ annotation [[paper]](https://aclanthology.org/2024.law-1.10.pdf)
 10. Uncovering latent arguments in social media messaging by employing llms-in-the-loop strategy [[paper]](https://arxiv.org/pdf/2404.10259)
 11. G-eval: Nlg evaluation using gpt-4 with better human alignment [[paper]](https://aclanthology.org/2023.emnlp-main.153.pdf)
 
+---
+
+## Crowdsourcing
+1. Spatial crowdsourcing: a survey [[paper]](https://link.springer.com/article/10.1007/s00778-019-00568-7)
+2. ChatGPT outperforms crowd workers for text-annotation tasks [[paper]](https://www.pnas.org/doi/abs/10.1073/pnas.2305016120)
+3. Investigating and mitigating biases in crowdsourced data [[paper]](https://dl.acm.org/doi/10.1145/3462204.3481729)
+4. AnnoLLM: Making Large Language Models to Be Better Crowdsourced Annotators [[paper]](https://aclanthology.org/2024.naacl-industry.15/)
+5. Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy [[paper]](https://www.science.org/doi/10.1126/sciadv.adp1528)
+6. LMTurk: Few-Shot Learners as Crowdsourcing Workers in a Language-Model-as-a-Service Framework [[paper]](https://aclanthology.org/2022.findings-naacl.51/)
+7. LLMs to Replace Crowdsourcing For Parallel Data Creation? The Case of Text Detoxification [[paper]](https://aclanthology.org/2024.findings-emnlp.839/)
+8. ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning [[paper]](https://arxiv.org/abs/2304.06588)
+9. ChatGPT to Replace Crowdsourcing of Paraphrases for Intent Classification: Higher Diversity and Comparable Model Robustness [[paper]](https://aclanthology.org/2023.emnlp-main.117/)
+10. A Comparative Study on Annotation Quality of Crowdsourcing and LLm Via Label Aggregation [[paper]](https://ieeexplore.ieee.org/document/10447803)
 
 ---
 
