@@ -38,7 +38,7 @@ month=apr}
   - [Active Learning With LLM](#active-learning-with-llm)
   - [Reinforcement Learning With LLM](#reinforcement-learning-with-llm)
 - [Task-Centric LLM-in-the-loop](#task-centric-llm-in-the-loop)
-- [Crowdsourcing](#crowdsourcing)
+- [Crowdsourcing with LLMs](#crowdsourcing-with-llms)
 - [Summary](#summary)
 
 ---
@@ -125,7 +125,7 @@ annotation [[paper]](https://aclanthology.org/2024.law-1.10.pdf)
 
 ---
 
-## Crowdsourcing
+## Crowdsourcing with LLMs
 1. Spatial crowdsourcing: a survey [[paper]](https://link.springer.com/article/10.1007/s00778-019-00568-7)
 2. ChatGPT outperforms crowd workers for text-annotation tasks [[paper]](https://www.pnas.org/doi/abs/10.1073/pnas.2305016120)
 3. Investigating and mitigating biases in crowdsourced data [[paper]](https://dl.acm.org/doi/10.1145/3462204.3481729)
