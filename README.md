@@ -30,7 +30,6 @@ month=apr}
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [LLM-in-the-Loop Keyword Paper](#llm-in-the-loop-keyword-paper)
 - [Data-Centric LLM-in-the-loop](#data-centric-llm-in-the-loop)
   - [Data Annotation](#data-annotation)
   - [Augmentation](#augmentation)
@@ -41,26 +40,6 @@ month=apr}
 - [Task-Centric LLM-in-the-loop](#task-centric-llm-in-the-loop)
 - [Crowdsourcing](#crowdsourcing)
 - [Summary](#summary)
-
----
-
-## LLM-in-the-Loop Keyword Paper
-1. Neural Topic Modeling with Large Language Models in the Loop [[paper]](https://arxiv.org/pdf/2411.08534)
-2. LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning [[paper]](https://arxiv.org/pdf/2408.02999)
-3. Asynchronous Large Language Model Enhanced Planner for Autonomous Driving [[paper]](https://arxiv.org/pdf/2406.14556)
-4. Language Models in the Loop: Incorporating Prompting into Weak Supervision [[paper]](https://arxiv.org/pdf/2205.02318)
-5. Dial-In LLM: Human-Aligned Dialogue Intent Clustering with LLM-in-the-loop [[paper]](https://arxiv.org/pdf/2412.09049)
-6. LLM-in-the-loop: Leveraging Large Language Model for Thematic Analysis [[paper]](https://aclanthology.org/2023.findings-emnlp.669.pdf)
-7. Uncovering Latent Arguments in Social Media Messaging by Employing LLMs-in-the-Loop Strategy [[paper]](https://arxiv.org/pdf/2404.10259)
-8. LLMs in the Loop: Leveraging Large Language Model Annotations for Active Learning in Low-Resource Languages [[paper]](https://aclanthology.org/2023.findings-emnlp.669.pdf)
-9. Generalized Category Discovery with Large Language Models in the Loop [[paper]](https://aclanthology.org/2024.findings-acl.512.pdf)
-10. Generative AI-in-the-loop: Integrating LLMs and GPTs into the Next Generation Networks [[paper]](https://arxiv.org/pdf/2406.04276)
-11. Hierarchical LLMs In-the-loop Optimization for Real-time Multi-Robot Target Tracking under Unknown Hazards [[paper]](https://arxiv.org/pdf/2409.12274)
-12. Training LLMs to Recognize Hedges in Spontaneous Narratives [[paper]](https://arxiv.org/pdf/2408.03319)
-13. LLMs-in-the-loop Part-1: Expert Small AI Models for Bio-Medical Text Translation [[paper]](https://arxiv.org/pdf/2407.12126)
-14. A Rationale-centric Counterfactual Data Augmentation Method for Cross-Document Event Coreference Resolution [[paper]](https://arxiv.org/pdf/2404.01921)
-15. Towards Single-System Illusion in Software-Defined Vehicles – Automated, AI-Powered Workflow [[paper]](https://arxiv.org/pdf/2403.14460)
-16. Instances Need More Care: Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance [[paper]](https://aclanthology.org/2024.findings-acl.371.pdf)
 
 ---
 
