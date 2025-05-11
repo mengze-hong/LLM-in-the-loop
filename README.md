@@ -11,21 +11,6 @@
 
 This page provides a comprehensive reading list on LLM-in-the-loop machine learning. The empirical experiment conducted for LLM-native text clustering can be found in the `./experiment` directory.
 
-## 📰News
-😎 We have uploaded a comprehensive survey about the LLM-in-the-loop methodologies within the context of machine learning applications, which discussed the definition, motivation, and techniques: [LLM-in-the-Loop is All You Need for Machine Learning Applications](https://www.techrxiv.org/users/912378/articles/1285957-position-llm-in-the-loop-is-all-you-need-for-machine-learning-applications).
-
-If you think our paper is helpful, please kindly cite our paper:
-```
-@article{llm-in-the-loop,
-title={Position: LLM-in-the-Loop is All You Need for Machine Learning Applications},
-url={http://dx.doi.org/10.36227/techrxiv.174495034.42657551/v1},
-DOI={10.36227/techrxiv.174495034.42657551/v1},
-publisher={Institute of Electrical and Electronics Engineers (IEEE)},
-author={Hong, Mengze and Ng, Wailing and Wang, Yifei and Jiang, Di and Song, Yuanfeng and Zhang, Chen Jason and Chen, Lei},
-year={2025},
-month=apr}
-```
-
 ---
 
 ## Table of Contents
